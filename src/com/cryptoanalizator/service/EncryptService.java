@@ -12,6 +12,7 @@ public class EncryptService {
         File f = new File("D:\\JavaRushProjects\\test.txt");
         f.renameTo(new File(fileName));
         String text = "";
+
         try (FileReader reader = new FileReader(file); FileWriter writer = new FileWriter(text); FileWriter fileWriter = new FileWriter(f)){
             char [] buffer = new char[65536];
             while (reader.ready())
